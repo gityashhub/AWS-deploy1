@@ -1,9 +1,22 @@
 const express = require('express');
+const path = require('path');
+
 const app = express();
-const PORT = process.env.PORT || 3000;
 
-app.use(express.static('public'));
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(PORT, () => {
-  console.log(`✅ Server is live on http://localhost:${PORT}`);
+// Fallback route for undefined paths (optional)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/index.html'));
 });
+
+// Start the server only if this script is run directly
+if (require.main === module) {
+  const PORT = 3000;
+  app.listen(PORT, () => {
+    console.log(`✅ Server is running at http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app; // Export app for testing
