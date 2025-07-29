@@ -13,7 +13,7 @@ app.get('*', (req, res) => {
 
 // Start the server only if this script is run directly
 if (require.main === module) {
-  const PORT = 3000;
+  const PORT = 3001;
   app.listen(PORT, () => {
     console.log(`✅ Server is running at http://localhost:${PORT}`);
   });
