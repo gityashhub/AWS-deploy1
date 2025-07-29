@@ -1,0 +1,52 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  text-align: center;
+  padding: 50px;
+}
+header {
+  background: #007acc;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+.steps {
+  background: white;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+ol {
+  text-align: left;
+  display: inline-block;
+  margin-top: 10px;
+}
+.buttons {
+  margin-top: 30px;
+}
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #218838;
+}
+#statusBox {
+  margin-top: 20px;
+  font-size: 18px;
+  color: green;
+}
+.hidden {
+  display: none;
+}
+footer {
+  margin-top: 40px;
+  color: #777;
+}

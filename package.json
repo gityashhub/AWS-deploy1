@@ -1,0 +1,12 @@
+{
+  "name": "aws-ec2-deploy-visual-site",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests for now\" && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Environment variables
+
+# Logs
+*.log
+
+# PM2 logs
+pids
+*.pid
+*.seed
+
+

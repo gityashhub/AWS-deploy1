@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS CI/CD Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚀 AWS EC2 Deployment with GitHub Actions</h1>
+    <p>This website is deployed via CI/CD to an EC2 instance using GitHub Actions and PM2</p>
+  </header>
+
+  <main>
+    <section class="steps">
+      <h2>🔧 How This Works</h2>
+      <ol>
+        <li>Code is pushed to GitHub</li>
+        <li>GitHub Actions workflow is triggered manually</li>
+        <li>Workflow installs dependencies and restarts server via PM2</li>
+        <li>This page is served from AWS EC2 🎉</li>
+      </ol>
+    </section>
+
+    <section class="buttons">
+      <button onclick="showStatus()">📦 View Deployment Status</button>
+      <div id="statusBox" class="hidden">✅ App is live on EC2!</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Deployed by GitHub Actions 🚀</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
